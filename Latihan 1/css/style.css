@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1, h2, h3 {
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-size: 17px;
+  color: rgb(134, 131, 131);
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(193deg, 100%, 96%);
+  font-family: "Open Sans", sans-serif;
+}
+
+.pink {
+  text-align: center;
+  padding: 15px 40px;
+  font-size: 12px;
+  background-color: hsl(322deg, 100%, 66%);
+  border-radius: 30px;
+}
+
+header {
+  background-image: url(img/bg-hero-desktop.svg);
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  margin-bottom: 250px;
+}
+header .container-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  z-index: 5;
+  padding: 15px 15px;
+}
+header .container-1 p {
+  padding: 0.8rem 4rem;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0rem 0.2rem 0.5rem;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  color: black;
+}
+header .container-2 {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  z-index: 5;
+}
+header .container-2 .item-1 {
+  width: 40%;
+  font-weight: bold;
+}
+header .container-2 .item-1 h1 {
+  font-size: 30px;
+}
+header .container-2 .item-1 p {
+  font-size: 17px;
+  color: rgb(94, 93, 93);
+}
+header .container-2 .item-2 {
+  width: 55%;
+}
+
+main .article-1 {
+  width: 80%;
+  height: 400px;
+  margin: auto;
+  margin-bottom: 100px;
+  box-shadow: -3px -3px 10px rgb(165, 161, 161);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+main .article-1 .item {
+  width: 45%;
+}
+main .article-1 img {
+  width: 40%;
+  height: 300px;
+}
+main .article-2 {
+  width: 33%;
+  height: 150px;
+  left: 33%;
+  padding: 0px 10px;
+  background-color: white;
+  position: absolute;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  width: 100%;
+  height: 500px;
+  background-color: hsl(192deg, 100%, 9%);
+  margin-top: 80px;
+}
+footer section {
+  display: flex;
+}
+footer section .item {
+  width: 30%;
+}
+footer section .item p {
+  color: hsl(193deg, 100%, 96%);
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=style.css.map */
