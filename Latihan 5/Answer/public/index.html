@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap" rel="stylesheet">
+    <style>
+        .hamburger{
+            display: none;
+        }
+        .dekstop{
+            display: flex;
+        }
+    </style>
+</head>
+<body class="font-famil">
+   <header class="w-screen h-16 flex justify-between items-center sm:justify-around">
+        <h1 class="text-[2.3755rem] ml-5 font-bold sm:-ml-[280px]">snap</h1>
+    
+    <!-- garis 3 -->
+        <img src="../img/icon-menu.svg" alt="" class="garis3 sm:hidden -mr-72"> 
+
+    <!-- hamburger menu dekstop -->
+        <div class="dekstop hidden sm:block text-Very ">
+            <ul class="items-center flex -ml-[650px] gap-10 mr-24 text-xs">
+                <li>
+                    <details class="">
+                        <summary class="hover:text-black">Features</summary>
+                        <ul class="card2">
+                            <li class="card"><img src="../img/icon-todo.svg"><a href="">Todo list</a></li>
+                            <li class="card"><img src="../img/icon-calendar.svg"><a href="">Calender</a></li>
+                            <li class="card"><img src="../img/icon-reminders.svg"><a href="">Reminders</a></li>
+                            <li class="card"><img src="../img/icon-planning.svg"><a href="">lanning</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary class="hover:text-black">Company</summary>
+                        <ul class="card2 ml-3">
+                            <li class="mb-1"><a href="">History</a></li>
+                            <li class="mb-1"><a href="">Our Team</a></li>
+                            <li class="mb-1"><a href="">Blog</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a href="" class="hover:text-black">Careers</a></li>
+                <li><a href="" class="hover:text-black">About</a></li>
+            </ul>
+            <ul class="flex gap-4 items-center ml-[400px] -mr-56 text-xs">
+                <li><a href="" class="hover:text-black">Login</a></li>
+                <li class="px-4 py-[5px] border border-Very rounded-xl hover:text-black hover:border-black"><a href="">Register</a></li>
+            </ul>
+        </div>
+   </header>
+
+   <main class="mt-1 sm:flex w-screen">
+
+<!--humburger menu mobile -->
+        <div class="hamburger absolute w-3/4 h-screen bg-white right-0 text-Very sm:hidden">
+            <details class="ml-8">
+                <summary>Features</summary>
+                <ul class="ml-7">
+                    <li class="card"><img src="../img/icon-todo.svg">Todo list</li>
+                    <li class="card"><img src="../img/icon-calendar.svg">Calender</li>
+                    <li class="card"><img src="../img/icon-reminders.svg">Reminders</li>
+                    <li class="card"><img src="../img/icon-planning.svg">Planning</li>
+                </ul>
+            </details>
+            <br>
+            <details class="ml-8">
+                <summary>Company</summary>
+                <ul class="ml-7">
+                    <li class="mb-1">History</li>
+                    <li class="mb-1">Our Team</li>
+                    <li class="mb-1">Blog</li>
+                </ul>
+            </details>
+            <br>
+            <p class="ml-8">Careers</p><br>
+            <p class="ml-8">About</p>
+            <br><br>
+            <nav class="w-auto h-auto m-auto ml-[13%] text-center">
+                <a href="" class="">Login</a><br><br>
+                <a href="" class="px-16 py-2 border border-Very rounded-xl">Register</a>
+            </nav> 
+        </div>
+
+    <!-- img mobile -->
+        <img src="../img/image-hero-mobile.png" alt="" class="sm:hidden">
+
+    <!-- img dekstop -->
+    <div class="item1 w-1/2 sm:flex sm:justify-center sm:items-center order-2">
+        <img src="../img/image-hero-desktop.png" alt="" class="hidden sm:block w-[55%] h-[500px]">
+    </div>
+        <br><br>
+    <div class="item2 sm:w-1/2 sm:h-[400px] sm:m-auto sm: sm:flex sm:justify-center sm:items-center order-1">
+        <div class="w-auto text-center sm:w-[65%] sm:text-start sm:h-96 sm:mt-24 sm:ml-52">
+            <h1 class="text-[2.375rem] font-bold sm:hidden">Make Remote Work</h1>
+
+            <h1 class="text-[2.375rem] font-bold text-6xl hidden sm:block">Make</h1>
+            <h1 class="text-[2.375rem] font-bold -mt-3 sm:text-6xl hidden sm:block">remote work</h1>
+            <p class="w-11/12 sm:w-[350px] m-auto sm:m-0 text-Very sm:text-sm sm:mt-8">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+            <br><br>
+            <a href="" class="px-8 py-5 sm:py-3 sm:px-5 bg-Dark text-Whiten rounded-xl sm:hover:bg-white sm:hover:border-black sm:hover:border sm:hover:text-Very">Learn more</a>
+            <br><br><br><br>
+            <nav class="flex justify-around mb-11">
+                <img src="../img/client-databiz.svg" alt="client-databiz" class="w-20 h-6">
+                <img src="../img/client-audiophile.svg" alt="client-audiophile" class="w-20 h-6">
+                <img src="../img/client-meet.svg" alt="client-meet" class="w-20 h-6">
+                <img src="../img/client-maker.svg" alt="client-maker" class="w-20 h-6">
+            </nav>
+        </div>
+    </div>
+   </main>
+
+   <footer>
+    
+   </footer>
+
+   <script src="script.js"></script>
+</body>
+</html>

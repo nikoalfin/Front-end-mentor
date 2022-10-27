@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan 3</title>
+    <link rel="stylesheet" href="output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <style>
+        .thank{
+            display: none;
+        }
+    </style>
+</head>
+<body class="font-famil w-screen h-screen sm:flex sm:justify-center sm:items-center">
+    <div class="container sm:w-70 sm:h-[620px] mx-auto sm:flex">
+        <div class="item1 sm:w-20 w-full">
+            <img src="../img/bg-main-mobile.png" alt="" class="w-screen h-[310px] sm:hidden block">
+            <img src="../img/bg-main-desktop.png" alt="" class="h-full sm:block hidden">
+
+            <nav class="bg-[url('../img/bg-card-front.png')] bg-cover sm:w-[380px] h-[200px] absolute z-10 sm:top-[140px] sm:ml-[80px] w-[340px] top-[153px] ml-[10px] rounded-lg text-Whiten tracking-wider p-2">
+                <nav class=" ml-7 mt-6 flex items-center">
+                    <nav class="w-10 h-10 bg-slate-100 rounded-full"></nav>
+                    <nav class="w-5 h-5 border border-White rounded-full ml-4"></nav>
+                </nav><br><br>
+
+                <nav class="flex gap-3 text-[23px] sm:ml-[45px] ml-[28px]">
+                    <p class="nomor">1234 5678 9123 4567</p>
+                </nav><br>
+            
+                <nav class="text-[12px] w-[85%] sm:ml-6 sm:pb-2 -mt-2 ml-6">
+                    <p class="nama float-left">FELICIA LEIRE</p>
+                    
+                    <nav class="flex float-right">
+                        <p class="tgl">09</p> / 
+                        <p class="bln">00</p>
+                    </nav>
+                </nav>
+            </nav>
+
+            <nav class="bg-[url('../img/bg-card-back.png')] bg-cover sm:w-[350px] h-[200px] absolute sm:top-[58%] sm:ml-[140px] w-[340px] top-[5%] ml-[32px] rounded-lg">
+                <p class="text-end leading-[200px] mr-9 text-yellow-50 thn">000</p>
+            </nav>
+        </div>
+
+        <div class="item2 sm:w-70 flex sm:justify-center sm:items-center w-[100%]">
+            <form for="" class="kartu sm:w-[45%] sm:ml-[300px] w-[95%] mx-auto mt-24">
+                <label for="name">CHALDOLDER NAME</label>
+                <input type="text" id="name" maxlength="20" placeholder="e.g Jane Appleseed" oninput="set_name()" class="w-full h-10 border border-Light p-3 outline-none rounded-lg focus:border-valid" ><br><br>
+
+                <label for="number">CARD NUMBER</label>
+                <input type="number" id="number" placeholder="e.g 1234 5678 9123 0000" oninput="set_number()"  onKeyPress="if(this.value.length==16) return false;" class="w-full h-10 border border-Light p-3 outline-none rounded-lg focus:border-valid invalid:focus:border-red" ><br><br>
+                <p class="text-[12px] m-[3px] -mt-4 text-red hidden danger">Wrong formats,numbers only</p>
+ 
+                <nav class="flex">
+                    <label for="date" class="mr-[45px]">EXP. DATE(MM/YY)</label>
+                    <p for="thn">CVC</p>
+                </nav>
+                
+                <div class="w-full h-11 flex">
+                    <nav class="w-[30%]">
+                        <input type="number" id="date" oninput="set_date()"  onKeyPress="if(this.value.length==2) return false;" min="1" max="31" class="h-10 border border-Light p-3 outline-none rounded-lg mr-4 focus:border-valid invalid:focus:border-red" placeholder="MM">
+
+                        <p class="text-[12px] m-[1px] text-red hidden danger2">Can't be blank</p>
+                    </nav>
+
+                    <nav class="w-[30%]">
+                        <input type="number" id="bln" oninput="set_bln()" onKeyPress="if(this.value.length==2) return false;" min="1" max="12" class="h-10 border border-Light p-3 outline-none rounded-lg mr-7 focus:border-valid invalid:focus:border-red" placeholder="YY">
+                        <p class="text-[12px] m-[1px] pl-[100px] text-red absolute hidden danger3">Can't be blank</p>
+                    </nav>
+
+                    
+                    <input type="number" id="thn" oninput="set_thn()" onKeyPress="if(this.value.length==3) return false;"  class="w-[50%] h-10 border border-Light p-3 outline-none rounded-lg focus:border-valid peer" placeholder="e.g 123">
+                </div>
+
+                <br><br>
+                <a href="#" class=" h-10 bg-Very py-3 sm:px-[121px] sm:-ml-[1.5px] rounded-lg text-white px-[121px] ml-8 confirm">Confirm</a>
+            </form>
+
+
+<!-- THANK YOU ============================= --> 
+
+            <div class="thank sm:w-auto h-64 text-center sm:ml-[250px] ml-[30px] mt-28 relative">
+                <img src="../img/icon-complete.svg" alt="" class="mb-6 mx-auto">
+                <h1 class="text-2xl">THANK YOU!</h1>
+                <p class="text-Dark mt-2">We've added your card details</p><br><br>
+                <a href="" class=" bg-Very py-3 px-[130px] rounded-lg text-white">Continue</a>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .card{
+       @apply flex gap-3 mb-2 shadow-2xl text-Very hover:text-black;
+    }
+    .card2{
+        @apply absolute px-7 py-3 shadow-2xl bg-white rounded-md -ml-14 mt-4 text-Very hover:text-black;
+    }
+}
