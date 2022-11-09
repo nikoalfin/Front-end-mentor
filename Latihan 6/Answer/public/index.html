@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan 6</title>
+    <link rel="stylesheet" href="output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+            /* border: 1px solid black; */
+        }
+        
+        input[type=range]{
+            -webkit-appearance: none;
+        }
+
+        input[type=range]::-webkit-slider-runnable-track {
+            width: 300px;
+            height: 8px;
+            background: #ddd;
+            border: none;
+            border-radius: 3px;
+        }
+
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            border: none;
+            height: 36px;
+            width: 36px;
+            border-radius: 50%;
+            background: hsl(174, 82%, 64%);
+            background-image: url(img/icon-slider.svg);
+            background-size: 26px;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-top: -15px;
+            box-shadow: 0px 15px 35px hsl(174, 86%, 45%);
+            z-index: 5;
+            position: relative;
+        }
+        input[type=range]:hover::-webkit-slider-thumb {
+            background-color: hsl(174, 86%, 45%);
+        }
+
+        input[type=range]:focus {
+            outline: none;
+        }
+
+        /* input[type=range]::-webkit-slider-runnable-track {
+            background: hsl(174, 77%, 80%);
+        } */
+        .parent{
+            position: absolute;
+            width: 330px;
+            height: 8px;
+            border-radius: 3px;
+            overflow: hidden;
+            margin-top: 32px;
+        }
+        .child{
+            width: 0%;
+            height: 100%;
+            background-color: hsl(174, 77%, 80%);
+            /* background: linear-gradient(90deg,hsl(174, 77%, 80%) 60%,hsl(0,0%,100%)60%); */
+        }
+    
+        @media (min-width: 640px) { 
+            .navbar{
+                display: block;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 60px;
+            }
+        }
+
+        .klikling{
+            margin-left: 27px;
+        }
+        .bg{
+            background-color: hsl(174, 86%, 45%);
+        }
+    </style>
+</head>
+<body class="w-screen h-auto bg-[url('img/bg-pattern.svg')] bg-cover  font-famil pb-14 text-Very">
+
+    <div class="w-screen h-64 bg-[url('img/pattern-circles.svg')] bg-no-repeat bg-center bg-origin-content m-auto text-center flex flex-col justify-center">
+        <h1 class="font-bold text-2xl text-black">Simple,trafic-based pricing</h1>
+        <p class="mt-3">Sign-up for our 30-day trial.<br class="sm:hidden">No credit card required</p>
+    </div>
+
+    <div class="w-11/12 h-72 m-auto rounded-lg bg-white shadow-2xl p-6 sm:w-[30%] sm:h-60">
+        <!-- awal dekstop -->
+        <nav class="navbar hidden">
+            <h1 class="font-bold text-sm">100K PAGEVIEWS</h1>
+            <nav class="text-center flex justify-center items-center "><h1 class="text-3xl font-bold mr-1 text-black">$16.00</h1><p>/ month</p>
+            </nav>
+        </nav>
+        <!-- akhir dekstop -->
+
+        <h1 class="text-center font-bold sm:hidden">100K PAGEVIEWS</h1>
+        <div class="parent">
+            <nav class="child"></nav>
+        </div>
+        <input type="range" value="0" min="0" max="50" class="range mt-8 w-full hover:cursor-pointer">
+
+        <nav class="text-center flex justify-center items-center  mt-10">
+            <h1 class="text-4xl font-bold mr-1 text-black sm:hidden">$16.00</h1>
+            <p class="sm:hidden">/ month</p>
+        </nav><br>
+
+        <nav class="w-[100%] m-auto flex items-center justify-center gap-2 mt-5 text-xs sm:-mt-8">
+            <p>Monthly Billing </p> 
+            <nav class="contain w-12 h-6 bg-Very rounded-3xl flex items-center hover:cursor-pointer">
+                <span class="ling block w-5 h-5 rounded-full bg-white "></span>
+            </nav>
+            <p>Yearly Billing</p>
+            <nav class="value w-14 h-6 bg-red rounded-3xl text-red2 flex justify-center items-center">-25%</nav>
+        </nav>
+       
+    </div>
+    
+    <br class="sm:hidden">
+    <div class="w-11/12 h-64 m-auto rounded-lg bg-white shadow-2xl text-center p-14 sm:w-[30%] sm:h-36 sm:flex sm:justify-between sm:items-center sm:gap-9">
+
+        <div class="w-56 h-20 sm:text-start sm:text-xs sm:-ml-7">
+            <nav class="flex justify-center sm:justify-start sm:w-40 mb-2 w-52">
+                <img src="img/icon-check.svg" alt="" class="w-4 mr-4"><p>Unlimited websites</p>
+            </nav>
+            <nav class="flex sm:w-40 justify-center sm:justify-start mb-2 w-52">
+                <img src="img/icon-check.svg" alt="" class="w-4 mr-4"><p>100% data ownership</p>
+            </nav>
+            <nav class="flex sm:w-40 justify-center sm:justify-start w-52">
+                <img src="img/icon-check.svg" alt="" class="w-4 mr-4"><p>Email reports</p>
+            </nav>
+        </div>
+
+        <br class="sm:hidden"><br class="sm:hidden">
+
+        <a href="" class="text-white py-3 px-12 bg-Dark-blue rounded-3xl sm:text-xs sm:px-6 sm:py-2 sm:w-40">Start my trial</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

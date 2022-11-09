@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 4</title>
+    <link rel="stylesheet" href="output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 16px;
+            grid-template-areas: 
+                'header1 header1 header1 header1'
+                'header2 header2 header2 header2'
+                'header3 header3 header3 header3'
+                'header4 header4 header4 header4'
+                'header5 header5 header5 header5'
+                'header6 header6 header6 header6'
+                'header7 header7 header7 header7'
+            ;
+        }
+        .item1{
+            grid-area: header1;
+        }
+        .item2{
+            grid-area: header2;
+        }
+        .item3{
+            grid-area: header3;
+        }
+        .item4{
+            grid-area: header4;
+        }
+        .item5{
+            grid-area: header5;
+        }
+        .item6{
+            grid-area: header6;
+        }
+        .item7{
+            grid-area: header7;
+        }
+        @media (min-width: 640px) {
+            .container{
+                grid-template-areas: 
+                'header1 header2 header3 header4'
+                'header1 header2 header3 header4'
+                'header1 header2 header3 header4'
+                'header1 header5 header6 header7'
+                'header1 header5 header6 header7'
+                'header1 header5 header6 header7'
+            ;
+            }
+        }; 
+    </style>
+</head>
+<body class=" font-famil text-Desatuated-blue py-20 bg-Very-dark-blue">
+
+    <div class="container w-11/12 m-auto sm:w-9/12">
+        
+        <div class="item1 bg-Dark-blue card h-56 sm:h-full">
+            <nav class="cardlagi w-auto h-[163px] bg-Blue rounded-2xl flex items-center justify-center gap-5 text-slate-300 sm:h-[60%] sm:block">
+                <img src="img/image-jeremy.png" alt="" class="w-[85px] h-[85px] border-4 border-l-white rounded-full sm:mt-9 sm:ml-10 sm:absolute sm:w-[60px] sm:h-[60px]">
+                <span class="block sm:absolute sm:mt-[120px] sm:ml-10">
+                    <p class="sm:text-sm">Report for</p>
+                    <h2 class="text-2xl">Jeremy <br class="hidden sm:block">Robson</h2>
+                </span>
+            </nav>
+
+            <nav class="flex justify-around items-center mt-5 sm:flex-col sm:items-start sm:justify-between sm:gap-5 sm:ml-7">
+                <p class="klik klik1 hover:text-white hover:cursor-pointer">Daily</p>
+                <p class="klik klik2 hover:text-white hover:cursor-pointer text-white">weekly</p>
+                <p class="klik klik3 hover:text-white hover:cursor-pointer">Monthly</p>
+            </nav>
+        </div>
+
+        <div class="item2 bg-Light-red card">
+            <img src="img/icon-work.svg" alt="" class="-mt-2 ml-[72%]">
+            <nav class="w-auto h-[163px] bg-Dark-blue rounded-2xl -mt-[30px] flex flex-col justify-center gap-2 relative hover:bg-gray-700 hover:cursor-pointer">
+                <span class="w-[89%] flex justify-between items-center text-slate-100 ml-5">
+                    <p class="text-xl">Work</p>
+                    <img src="img/icon-ellipsis.svg" alt="" class="w-4 h-1">
+                </span>
+                <span class="w-[89%] flex justify-between items-center ml-5 sm:block ">
+                    <p class="work1 text-slate-100 text-5xl">36hrs</p>
+                    <p class="work2">Last week-36hrs</p>
+                </span>
+            </nav>
+        </div>
+
+        <div class="item3 bg-Soft-blue card">
+            <img src="img/icon-play.svg" alt="" class="-mt-2 ml-[73%]">
+            <nav class="w-auto h-[163px] bg-Dark-blue rounded-2xl -mt-[29px] flex flex-col justify-center gap-2 relative hover:bg-gray-700 hover:cursor-pointer">
+                <span class="w-[89%] flex justify-between items-center text-slate-100 ml-5">
+                    <p class="text-xl">Play</p>
+                    <img src="img/icon-ellipsis.svg" alt="" class="w-4 h-1">
+                </span>
+                <span class="w-[89%] flex justify-between items-center ml-5 sm:block">
+                    <p class="text-slate-100 text-5xl work1">10hrs</p>
+                    <p class="work2">Last week-8hrs</p>
+                </span>
+            </nav>
+        </div>
+
+        <div class="item4 bg-Light-red2 card">
+            <img src="img/icon-study.svg" alt="" class="-mt-2 ml-[72%]">
+            <nav class="w-auto h-[163px] bg-Dark-blue rounded-2xl -mt-[31px] flex flex-col justify-center gap-2 relative hover:bg-gray-700 hover:cursor-pointer">
+                <span class="w-[89%] flex justify-between items-center text-slate-100 ml-5">
+                    <p class="text-xl">Study</p>
+                    <img src="img/icon-ellipsis.svg" alt="" class="w-4 h-1">
+                </span>
+                <span class="w-[89%] flex justify-between items-center ml-5 sm:block">
+                    <p class="text-slate-100 text-5xl work1">4hrs</p>
+                    <p class="work2">Last week-7hrs</p>
+                </span>
+            </nav>
+        </div>
+
+        <div class="item5 bg-Lime-green card">
+            <img src="img/icon-exercise.svg" alt="" class="-mt-1 ml-[72%]">
+            <nav class="w-auto h-[163px] bg-Dark-blue rounded-2xl -mt-[10px] flex flex-col justify-center gap-2 relative hover:bg-gray-700 hover:cursor-pointer">
+                <span class="w-[89%] flex justify-between items-center text-slate-100 ml-5">
+                    <p class="text-xl">Exercise</p>
+                    <img src="img/icon-ellipsis.svg" alt="" class="w-4 h-1">
+                </span>
+                <span class="w-[89%] flex justify-between items-center ml-5 sm:block">
+                    <p class="text-slate-100 text-5xl work1">4hrs</p>
+                    <p class="work2">Last week-5hrs</p>
+                </span>
+            </nav>
+        </div>
+
+        <div class="item6 bg-Violet card">
+            <img src="img/icon-social.svg" alt="" class="-mt-4 ml-[74%]">
+            <nav class="w-auto h-[163px] bg-Dark-blue rounded-2xl -mt-[45px] flex flex-col justify-center gap-2 relative hover:bg-gray-700 hover:cursor-pointer">
+                <span class="w-[89%] flex justify-between items-center text-slate-100 ml-5">
+                    <p class="text-xl">Social</p>
+                    <img src="img/icon-ellipsis.svg" alt="" class="w-4 h-1">
+                </span>
+                <span class="w-[89%] flex justify-between items-center ml-5 sm:block">
+                    <p class="text-slate-100 text-5xl work1">5hrs</p>
+                    <p class="work2">Last week-10hrs</p>
+                </span>
+            </nav>
+        </div>
+
+        <div class="item7 bg-Soft-orange card">
+            <img src="img/icon-self-care.svg" alt="" class="-mt-2 ml-[77%]">
+            <nav class="w-auto h-[163px] bg-Dark-blue rounded-2xl -mt-[20px] flex flex-col justify-center gap-2 relative hover:bg-gray-700 hover:cursor-pointer">
+                <span class="w-[89%] flex justify-between items-center text-slate-100 ml-5">
+                    <p class="text-xl">Self Care</p>
+                    <img src="img/icon-ellipsis.svg" alt="" class="w-4 h-1">
+                </span>
+                <span class="w-[89%] flex justify-between items-center ml-5 sm:block">
+                    <p class="text-slate-100 text-5xl work1">2hrs</p>
+                    <p class="work2">Last week-2hrs</p>
+                </span>
+            </nav>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
